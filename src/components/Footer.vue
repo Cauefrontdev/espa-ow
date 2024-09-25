@@ -74,8 +74,7 @@
           <p>
             contato@espacow.com*
           </p>
-          <p><i class="fas fa-phone me-3"></i> + 14 234 567 89**</p>
-          <p><i class="fas fa-print me-3"></i> + 14 234 567 89**</p>
+          <p><i class="fas fa-phone me-3"></i> {Número da espaçoW aqui***}</p>
         </div>
         <!-- Grid column -->
       </div>
@@ -97,6 +96,7 @@
 
       .rede{
         display: flex;
+        flex-direction: column;
         gap: 20px;
         font-size: 24px;
       }
