@@ -50,12 +50,12 @@
   .btn {
     padding:7px 15px;
     background-color: #fff;
-    color: #000;
+    color: #030303;
   }
   .normas-container {
     padding-top: 100px;
     width: 100%;
-    background-color: #000000; /* Fundo preto */
+    background-color: #030303; /* Fundo preto */
   }
   
   ul {

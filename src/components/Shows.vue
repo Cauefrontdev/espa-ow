@@ -1,5 +1,5 @@
 <template>
-    <div class="carrousel-container">
+    <div id="eventos" class="carrousel-container">
         <h1>Próximos Eventos</h1>
         <p>Clique na imagem para adiquirir seu ingresso</p>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -24,6 +24,7 @@
   <style scoped>
 
   .carrousel-container {
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;

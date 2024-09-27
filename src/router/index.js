@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/Home.vue';
 import EventsView from '../views/Events.vue';
 import ContactView from '../views/Contacts.vue';
-import RulesView from '../views/Rules.vue';
+
 
 const routes = [
   {
@@ -21,12 +21,7 @@ const routes = [
     component: ContactView,
   },
 
-  {
-    path: '/rules',
-    name: 'rules',
-    component: RulesView,
-  },
-
+ 
 ];
 
 const router = createRouter({

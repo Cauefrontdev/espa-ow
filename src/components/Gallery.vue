@@ -51,7 +51,7 @@
   
     .img {
       width: auto;
-      height: 50vh;
+      height: 70vh;
     }
 
 }

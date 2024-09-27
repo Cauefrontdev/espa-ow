@@ -1,5 +1,5 @@
 <template>
-  <div class="container normas-container text-white">
+  <div id="regras" class="container normas-container text-white">
     <ul class="list-unstyled">
 
       <li>
@@ -34,6 +34,7 @@ export default {
 
 <style scoped>
 .normas-container {
+  padding: 50px;
   width: 70%;
   background-color: #ffffff; /* Fundo preto */
 }
@@ -69,7 +70,6 @@ strong {
 
 @media (max-width: 844px) {
   .normas-container {
-  padding: 50px;
   width: 100%;
 }
   h1 {

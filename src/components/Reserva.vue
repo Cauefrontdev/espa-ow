@@ -29,13 +29,14 @@
   <style scoped>
   .btn {
     padding:7px 15px;
-    background-color: #fff;
-    color: #000;
+    background-color: #f5f5f5;
+    color: #030303;
   }
   .normas-container {
     padding-top: 100px;
     width: 100%;
-    background-color: #000000; /* Fundo preto */
+  background-color: #030303; 
+
   }
   
   ul {
@@ -55,7 +56,7 @@
   }
   
   p {
-    text-align: center;
+    text-align: left;
     font-size: 25px;
     color: #f8f8f8; /* Texto branco */
   }
@@ -66,7 +67,7 @@
   }
   
   strong {
-    color: #000000; /* Texto branco */
+    color: #030303; /* Texto branco */
   }
   
   @media (max-width: 844px) {

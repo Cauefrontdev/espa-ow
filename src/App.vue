@@ -16,27 +16,49 @@ import FooterComponent from './components/Footer.vue';
 import HeaderComponent from './components/Header.vue';
 </script>
 
-<style >
+<script>
+export default {
+  mounted() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    for (const link of links) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    }
+  },
+};
+</script>
+
+
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-   header {
-    background-color: #000 !important;
+  header {
+    z-index: 1000;
+    background-color: #030303 !important;
    }
 
-   .footer {
+  .footer {
   bottom: 0;
   width: 100%;
-  color: #AEAEAE; 
-  background-color: #000; 
+  color: #f5f5f5; 
+  background-color: #030303; 
   padding: 20px 0;
 }
 
 .footer a {
-  color: #AEAEAE; 
+  color: #f5f5f5; 
 }
 
-.footer a:hover {
-  color: #fff; 
-}
+
 
 .wpp {
   background-color: #fff !important; padding: 20px

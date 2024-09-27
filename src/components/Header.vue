@@ -8,20 +8,20 @@
           <RouterLink class="nav-link" aria-current="page" to="/" @click.native="closeMenu">Home</RouterLink>
         </li>
         <li class="nav-item active">
-          <RouterLink class="nav-link" aria-current="page" to="/Events" @click.native="closeMenu">Eventos</RouterLink>
+          <a href="#eventos" class="nav-link" aria-current="page" @click.native="closeMenu">Eventos</a>
         </li>
         <li class="nav-item active">
-          <RouterLink class="nav-link" aria-current="page" to="/Contact" @click.native="closeMenu">Contatos</RouterLink>
-        </li>
-        <li class="nav-item active">
-          <RouterLink class="nav-link" aria-current="page" to="/rules" @click.native="closeMenu">Normas e restrições</RouterLink>
+          <a class="nav-link" aria-current="page" href="#regras" @click.native="closeMenu">Normas e restrições</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Local" @click="closeMenu">Localização</a>
+          <a class="nav-link" href="#local" @click="closeMenu">Localização</a>
         </li>
 
         <li class="nav-item active">
-          <RouterLink class="nav-link" aria-current="page" to="/galeria" @click.native="closeMenu">Fotos</RouterLink>
+          <a href="#carouselExampleCaptions" class="nav-link" aria-current="page"  @click.native="closeMenu">Fotos</a>
+        </li>
+        <li class="nav-item active" @click.native="closeMenu">
+          <a href="#footer" class="nav-link">Contatos</a>
         </li>
         
         
@@ -61,7 +61,7 @@ a {
 }
 
 .header {
-  background: rgb(0, 0, 0);
+  background: #030303;
   padding-inline: 16px;
 }
 
@@ -86,7 +86,7 @@ a {
 
 .nav-list a {
   font-size: 18px;
-  color: #A6A9AC;
+  color: #f5f5f5;
   padding-block: 16px;
   text-transform: uppercase;
 }
@@ -129,7 +129,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgb(0, 0, 0);
+    background: #030303;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
     flex-direction: column;

@@ -1,5 +1,5 @@
 <template>
-    <footer data-bs-theme="dark" class="text-center text-lg-start bg-black text-muted footer">
+    <footer id="footer" style="color: #f5f5f5 !important;" class="text-center text-lg-start bg-black text-muted footer">
   <!-- Section: Social media -->
 
   <!-- Section: Links  -->
