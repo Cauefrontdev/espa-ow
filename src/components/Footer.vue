@@ -1,22 +1,5 @@
 <template>
     <footer data-bs-theme="dark" class="text-center text-lg-start bg-black text-muted footer">
-  <!-- Se ction: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="container">
-      <div class="rede text-center text-md-start mt-1">
-        <span>Conecte-se com o Espaço W nas redes sociais:</span>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-      </div>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    
-   
-    <!-- Right -->
-  </section>
   <!-- Section: Social media -->
 
   <!-- Section: Links  -->

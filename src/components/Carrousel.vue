@@ -35,7 +35,7 @@
   }
 
   .slogan-box {
-    z-index: 100;
+    z-index: 1;
     position: absolute;
     width: 100%;
     gap: 20px;
@@ -55,9 +55,19 @@
   }
 
       .img {
+        width: 100vw;
+        height: 90vh;
+        filter: brightness(0.4);
+      }
+
+    @media (max-width: 844px) {
+    
+      .img {
         width: auto;
         height: 50vh;
         filter: brightness(0.4);
       }
+
+}
   </style>
   

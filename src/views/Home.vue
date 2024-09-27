@@ -1,19 +1,29 @@
 <template>
   <div>
     <CarrouselComponent />
-    <HistoryComponent/>
+    <ShowsComponent/>
+    <GalleryComponent/>
+    <ReservaComponent/>
+    <MapComponent/>
   </div>
 </template>
 
 <script>
 import CarrouselComponent from '@/components/Carrousel.vue';
-import HistoryComponent from '@/components/History.vue';
+import ShowsComponent from '@/components/Shows.vue';
+import MapComponent from '@/components/Maps.vue';
+import ReservaComponent from '@/components/Reserva.vue';
+import GalleryComponent from '@/components/Gallery.vue';
+
+
 
 export default {
   components: {
     CarrouselComponent,
-    HistoryComponent,
-
+    ShowsComponent,
+    MapComponent,
+    ReservaComponent,
+    GalleryComponent,
   },
 };
 </script>
