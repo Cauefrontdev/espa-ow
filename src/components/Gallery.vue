@@ -1,6 +1,6 @@
 <template>
 
-    <div style="overflow-x: hidden;" class="carrousel-container">
+    <div class="carrousel-container">
       <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,10 +55,11 @@
   
     .img {
       width: auto;
-      height: 70vh;
+      height: 80vh;
     }
 
     .carrousel-container {
+      overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
