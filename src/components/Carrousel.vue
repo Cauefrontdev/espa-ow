@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: black; " id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div style="margin-top: 100px;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="slogan-box">
         <img style="max-width: 140px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
         <h2>O lugar perfeito.</h2>

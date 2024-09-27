@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+
     <div class="carrousel-container">
       <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
@@ -37,7 +37,6 @@
       </button>
       </div>
     </div>
-  </div>
 
 
 
@@ -58,6 +57,13 @@
       width: auto;
       height: 70vh;
     }
+
+    .carrousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
 
 }
 </style>
