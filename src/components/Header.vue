@@ -21,7 +21,7 @@
         </li>
 
         <li class="nav-item active">
-          <RouterLink class="nav-link" aria-current="page" to="/galeria" @click.native="closeMenu">Fotos do Local</RouterLink>
+          <RouterLink class="nav-link" aria-current="page" to="/galeria" @click.native="closeMenu">Fotos</RouterLink>
         </li>
         
         
