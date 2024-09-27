@@ -1,5 +1,5 @@
 <template>
-    <footer id="footer" style="color: #f5f5f5 !important;" class="text-center text-lg-start bg-black text-muted footer">
+    <footer id="footer" style="color: #f5f5f5 !important;" class="text-center text-lg-start text-muted footer">
   <!-- Section: Social media -->
 
   <!-- Section: Links  -->
@@ -20,21 +20,6 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Links Úteis
-          </h6>
-          <p>
-            <RouterLink  class="text-reset" aria-current="page" to="/">Home</RouterLink>
-          </p>
-          <p>
-            <RouterLink class="text-reset" aria-current="page" to="/events">Eventos</RouterLink>
-          </p>
-          <p>
-            <RouterLink class="text-reset" aria-current="page" to="/contact">Contatos</RouterLink>
-          </p>
-        </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
@@ -54,10 +39,7 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
-          <p>
-            contato@espacow.com*
-          </p>
-          <p><i class="fas fa-phone me-3"></i> {Número da espaçoW aqui***}</p>
+          <p><i class="fas fa-phone me-3"></i>(14) 99602-7888</p>
         </div>
         <!-- Grid column -->
       </div>

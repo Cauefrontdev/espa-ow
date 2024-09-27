@@ -1,42 +1,43 @@
 <template>
     <div class="normas-container text-white">
-      <ul class="list-unstyled">
-  
-        <li>
-          <h1 class="text-center">Sobre o Espaço W</h1>
-        </li>
-        <li>
-           <p class="lead">
-            O Espaço W é um local projetado para oferecer experiências inesquecíveis em um ambiente acolhedor e sofisticado. Seja para festas, casamentos, eventos corporativos ou encontros familiares, estamos aqui para atender suas necessidades.
-            </p>
-        </li>
-        <li>
-            <h1>Nossa Missão</h1>
-        </li>
-        <li>
-            <p>Proporcionar um espaço versátil e acolhedor, onde cada evento é realizado com cuidado e atenção aos detalhes, garantindo a satisfação de nossos clientes.</p>
-        </li>
-       <li>
-        <h1>Nossos Valores</h1>
-       </li>
-       <li>
-        <ul>
-            <li><p>Excelência no atendimento</p></li>
-            <li><p>Compromisso com a qualidade</p></li>
-            <li><p>Respeito ao meio ambiente</p></li>
-            <li><p>Inovação constante</p></li>
-            </ul>
-       </li>
-       <li>
-         <h1>Ambientes</h1>
-       </li>
-       <li>
-        <p> Oferecemos diversos ambientes, cada um pensado para criar a atmosfera ideal para o seu evento. Desde espaços ao ar livre até salas internas, temos opções que atendem a diferentes estilos e necessidades.</p>
-       </li>
-       <li>
-        <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
-       </li>
-      </ul>
+      <div class="container">
+        <ul class="list-unstyled">
+          <li>
+            <h1 class="text-center">Sobre o Espaço W</h1>
+          </li>
+          <li>
+             <p class="lead">
+              O Espaço W é um local projetado para oferecer experiências inesquecíveis em um ambiente acolhedor e sofisticado. Seja para festas, casamentos, eventos corporativos ou encontros familiares, estamos aqui para atender suas necessidades.
+              </p>
+          </li>
+          <li>
+              <h1>Nossa Missão</h1>
+          </li>
+          <li>
+              <p>Proporcionar um espaço versátil e acolhedor, onde cada evento é realizado com cuidado e atenção aos detalhes, garantindo a satisfação de nossos clientes.</p>
+          </li>
+         <li>
+          <h1>Nossos Valores</h1>
+         </li>
+         <li>
+          <ul>
+              <li><p>Excelência no atendimento</p></li>
+              <li><p>Compromisso com a qualidade</p></li>
+              <li><p>Respeito ao meio ambiente</p></li>
+              <li><p>Inovação constante</p></li>
+              </ul>
+         </li>
+         <li>
+           <h1>Ambientes</h1>
+         </li>
+         <li>
+          <p> Oferecemos diversos ambientes, cada um pensado para criar a atmosfera ideal para o seu evento. Desde espaços ao ar livre até salas internas, temos opções que atendem a diferentes estilos e necessidades.</p>
+         </li>
+         <li>
+          <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
+         </li>
+        </ul>
+      </div>
     </div>
   </template>
   
@@ -55,11 +56,12 @@
   .normas-container {
     padding-top: 100px;
     width: 100%;
-    background-color: #030303; /* Fundo preto */
+  background-color: #030303; 
+
   }
   
   ul {
-    align-items: left;
+    align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -76,6 +78,7 @@
   
   p {
     text-align: left;
+    max-width: 700px;
     font-size: 25px;
     color: #f8f8f8; /* Texto branco */
   }
@@ -86,10 +89,22 @@
   }
   
   strong {
-    color: #000000; /* Texto branco */
+    color: #030303; /* Texto branco */
+  }
+
+  img {
+    margin-bottom: 100px;
   }
   
   @media (max-width: 844px) {
+
+    img {
+      margin: 0;
+    }
+
+    .btn {
+      margin: 0;
+    }
     .normas-container {
     padding: 50px;
     width: 100%;

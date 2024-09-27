@@ -1,22 +1,23 @@
 <template>
     <div class="normas-container text-white">
-      <ul class="list-unstyled">
-  
-        <li>
-          <h1 class="text-center">RESERVAS</h1>
-        </li>
-        <li>
-           <p class="lead">
-            Oferecemos uma variedade de ambientes em nossa casa, proporcionando a você a melhor experiência possível. Temos mesas confortáveis e acolhedoras, perfeitas para momentos especiais com amigos e familiares. Venha desfrutar do nosso espaço!
-      </p>
-        </li>
-       <li>
-        <p>RESERVE SEU LUGAR COMIGO PELO WHATSAPP.</p>
-       </li>
-       <li>
-        <a class="btn" href="https://w.app/h7MPRb">FALE COM IGOR</a>
-       </li>
-      </ul>
+      <div class="container">
+        <ul class="list-unstyled">
+          <li>
+            <h1 class="text-center">RESERVAS</h1>
+          </li>
+          <li>
+             <p class="lead">
+              Oferecemos uma variedade de ambientes em nossa casa, proporcionando a você a melhor experiência possível. Temos mesas confortáveis e acolhedoras, perfeitas para momentos especiais com amigos e familiares. Venha desfrutar do nosso espaço!
+        </p>
+          </li>
+         <li>
+          <p>RESERVE SEU LUGAR COMIGO PELO WHATSAPP.</p>
+         </li>
+         <li>
+          <a class="btn" href="https://w.app/h7MPRb">FALE COM IGOR</a>
+         </li>
+        </ul>
+      </div>
     </div>
   </template>
   
@@ -31,6 +32,7 @@
     padding:7px 15px;
     background-color: #f5f5f5;
     color: #030303;
+    margin-bottom: 100px;
   }
   .normas-container {
     padding-top: 100px;
@@ -57,6 +59,7 @@
   
   p {
     text-align: left;
+    max-width: 700px;
     font-size: 25px;
     color: #f8f8f8; /* Texto branco */
   }
@@ -71,6 +74,10 @@
   }
   
   @media (max-width: 844px) {
+
+    .btn {
+      margin: 0;
+    }
     .normas-container {
     padding: 50px;
     width: 100%;

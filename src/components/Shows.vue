@@ -5,7 +5,7 @@
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="https://q2ingressos.com.br/events/ratto-acustico-espaco-w18092024104545">  <img src="https://i.imgur.com/rLrEWXS.jpeg" class="d-block w-100" alt="..."></a>
+            <a href="https://q2ingressos.com.br/events/ratto-acustico-espaco-w18092024104545">  <img src="https://i.imgur.com/rLrEWXS.jpeg" class="d-block img" alt="..."></a>
         </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -65,8 +65,14 @@
 
       .img {
         width: auto;
-        height: 50vh;
-        filter: brightness(0.6);
+        height: 80vh;
       }
+
+      @media (max-width: 844px) {
+        .img {
+        width: auto;
+        height: 60vh;
+      }
+  }
   </style>
   

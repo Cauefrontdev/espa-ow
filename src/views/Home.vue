@@ -1,5 +1,4 @@
 <template>
-  <div>
     <CarrouselComponent />
     <ShowsComponent/>
     <AboutComponent/>
@@ -7,7 +6,6 @@
     <ReservaComponent/>
     <MapComponent/>
     <RulesComponent/>
-  </div>
 </template>
 
 <script>
