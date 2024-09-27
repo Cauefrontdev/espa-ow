@@ -1,94 +1,63 @@
 <template>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://i.imgur.com/ZdGmc8B.jpeg" class="d-block w-100 img-1" alt="...">
-          <img src="https://i.imgur.com/HgZRWlK.jpeg" alt="" class="d-block w-100 img-2">
-          <div class="carousel-caption ">
-                <div class="container title">
-                    <img class="logo"  style="max-width: 250px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
-                    <h1>Cada Evento se Torna Inesquecível</h1>
-                    <p>Descubra o lugar ideal para tornar suas ideias realidade</p>
-                </div>
-               
-                </div>
-          </div>
-        </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="slogan-box">
+        <img style="max-width: 140px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
+        <h2>O lugar perfeito.</h2>
       </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.imgur.com/CVVklRl.jpeg" class="d-block img" alt="...">
+    </div>
+    <div class="carousel-item" >
+      <img src="https://i.imgur.com/pa95bhI.jpeg" class="d-block img" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/gHdFXgJ.jpeg" class="d-block img" alt="...">
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
   </template>
   
   <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
-.carousel-caption {
-  left: 0;
-  right: 0;
-  top: 5vw; 
-  text-align: left;
-
-  & h1 {
-    font-size: 5.7vw;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Playfair Display", serif;
+  .slide {
+    position: relative;
   }
 
-  & p {
-    font-size: 1.5vw;
-    font-weight: 100;
-    font-family: 'Poppins', sans-serif;
-  }
-
-}
-
-.img-2 {
-        display: none !important; 
-    }
-
-.title {
+  .slogan-box {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    & h2 {
+      font-family: "Playfair Display", system-ui;
+      text-transform: uppercase;
+      max-width: 200px;
+      text-align: center;
+    }
   }
 
-  @media (max-width: 992px) {
-
-    .logo {
-        display: none;
-    }
-   
-    
-    .img-1 {
-        display: none !important; 
-    }
-
-    .img-2 {
-        z-index: 1000;
-        display: block !important; 
-    }
-
-    .carousel-caption {
+      .img {
         width: auto;
-        top: 40%; 
-        left: 35%; 
-        transform: translate(-50%, -50%);
-
-
-        & h1 {
-            font-size: 45px;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: "Playfair Display", serif;
-        }
-
-        & p {
-            font-size: 25px;
-            font-weight: 100;
-            font-family: 'Poppins', sans-serif;
-        }
-    }
-}
-
+        height: 50vh;
+        filter: brightness(0.4);
+      }
   </style>
   
