@@ -56,7 +56,7 @@ header {
   width: 100vw;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 1001;
   background-color: #030303;
   height: 100px; /* Defina a altura exata do header */
 }
