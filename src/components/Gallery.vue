@@ -9,19 +9,19 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://i.imgur.com/CVVklRl.jpeg" class="d-block w-100" alt="...">
+          <img src="https://i.imgur.com/CVVklRl.jpeg" class="d-block img" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Foto </h5>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://i.imgur.com/pa95bhI.jpeg" class="d-block w-100" alt="...">
+          <img src="https://i.imgur.com/pa95bhI.jpeg" class="d-block img" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Foto 2</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://i.imgur.com/gHdFXgJ.jpeg" class="d-block w-100" alt="...">
+          <img src="https://i.imgur.com/gHdFXgJ.jpeg" class="d-block img" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Foto 3</h5>
           </div>

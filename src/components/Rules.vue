@@ -36,7 +36,7 @@ export default {
 .normas-container {
   padding: 50px;
   width: 70%;
-  background-color: #ffffff; /* Fundo preto */
+  background-color: #f5f5f5; /* Fundo preto */
 }
 
 ul {
