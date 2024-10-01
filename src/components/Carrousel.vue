@@ -1,8 +1,8 @@
 <template>
     <div style="margin-top: 100px;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="slogan-box">
-        <img style="max-width: 140px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
-        <h2>O lugar perfeito.</h2>
+        <h1><b>Espaço</b>W</h1>
+        <h2>Um novo conceito em eventos.</h2>
       </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -14,6 +14,20 @@
   </template>
   
   <style scoped>
+
+   h1 {
+    font-family: "Playfair Display", system-ui;
+   }
+
+   h1 {
+    font-size: 90px;
+   }
+   b {
+    font-weight: 100;
+    font-size: 35px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+   }
 
   .slide {
     position: relative;
@@ -34,8 +48,8 @@
 
     & h2 {
       font-family: "Playfair Display", system-ui;
-      text-transform: uppercase;
       max-width: 200px;
+      font-weight: 400;
       text-align: center;
     }
   }

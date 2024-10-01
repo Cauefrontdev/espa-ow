@@ -23,7 +23,7 @@
   .map-container {
     width: 100%;
     height: 80vh;
-    filter: grayscale(55%);
+    filter: grayscale(100%);
   }
   </style>
 

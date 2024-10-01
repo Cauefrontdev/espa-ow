@@ -3,11 +3,11 @@
     <div class="container">
       <ul class="list-unstyled">
         <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
-          <h1 v-if="section.isTitle" class="text-center">{{ section.title }}</h1>
+          <h1 v-if="section.isTitle" class="">{{ section.title }}</h1>
           <p v-else>{{ section.content }}</p>
         </li>
         <li class="fade-in" ref="animatedSections">
-          <a class="btn" href="https://w.app/h7MPRb">FALE COM IGOR</a>
+          <a class="btn" href="https://w.app/h7MPRb">FALE COM IGOR MARQUES</a>
         </li>
       </ul>
     </div>
@@ -24,7 +24,7 @@ const sections = [
     content:
       'Oferecemos uma variedade de ambientes em nossa casa, proporcionando a você a melhor experiência possível. Temos mesas confortáveis e acolhedoras, perfeitas para momentos especiais com amigos e familiares. Venha desfrutar do nosso espaço!',
   },
-  { content: 'RESERVE SEU LUGAR COMIGO PELO WHATSAPP.' },
+  { content: 'RESERVE SEU LUGAR, OU ALUGUE O ESPAÇO W COMIGO PELO WHATSAPP.' },
 ];
 
 // Definindo o ref para armazenar os elementos que receberão animação
@@ -55,64 +55,43 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Estilos gerais */
-.normas-container {
-  padding-top: 100px;
-  width: 100%;
-  background-color: #030303; /* Fundo preto */
-}
+
 
 ul {
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
 h1 {
-  font-size: 45px;
-  text-transform: uppercase;
   font-family: "Playfair Display", system-ui;
   font-weight: bold;
-  color: #ffffff; /* Texto branco */
+  text-transform: uppercase;
+  color: #f5f5f5; /* Texto branco */
 }
 
 p {
-  text-align: left;
+  
   max-width: 700px;
   font-size: 25px;
-  color: #f8f8f8; /* Texto branco */
+  color: #f5f5f5; /* Texto branco */
 }
+
+.btn { padding: 7px 15px; background-color: #f5f5f5; color: #030303; }
 
 ul {
   font-size: 25px;
-  color: #ffffff; /* Texto branco */
+  color: #f5f5f5; /* Texto branco */
 }
 
-.btn {
-  padding: 7px 15px;
-  background-color: #f5f5f5;
-  color: #030303;
+img {
   margin-bottom: 100px;
 }
 
-/* Estilos de animação */
-.fade-in {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 @media (max-width: 844px) {
-  .btn {
+  img {
     margin: 0;
   }
 
@@ -132,5 +111,17 @@ ul {
   p {
     font-size: 20px;
   }
+}
+
+/* Estilos de animação */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

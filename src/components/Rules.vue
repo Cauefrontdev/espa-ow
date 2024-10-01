@@ -1,14 +1,16 @@
 <template>
-  <div id="regras" class="container normas-container text-white">
-    <ul class="list-unstyled">
-      <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
-        <h1 v-if="section.isTitle" class="text-center">{{ section.title }}</h1>
-        <p v-else-if="section.isLead">{{ section.content }}</p>
-        <p v-else>
-          <strong>{{ section.strongText }}</strong> {{ section.content }}
-        </p>
-      </li>
-    </ul>
+  <div class="container">
+    <div id="regras" class="container normas-container text-white">
+      <ul class="list-unstyled">
+        <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
+          <h1 v-if="section.isTitle" class="">{{ section.title }}</h1>
+          <p v-else-if="section.isLead">{{ section.content }}</p>
+          <p v-else>
+            <strong>{{ section.strongText }}</strong> {{ section.content }}
+          </p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -69,38 +71,66 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Estilos Gerais */
-.normas-container {
-  padding: 50px;
-  width: 70%;
-  background-color: #f5f5f5; /* Fundo branco */
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 
 ul {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
 h1 {
-  font-size: 45px;
-  text-transform: uppercase;
   font-family: "Playfair Display", system-ui;
   font-weight: bold;
-  color: #000000; /* Texto preto */
+  text-transform: uppercase;
+  color: #f5f5f5; /* Texto branco */
 }
 
 p {
-  text-align: center;
+  
+  max-width: 700px;
   font-size: 25px;
-  color: #000000; /* Texto preto */
+  color: #f5f5f5; /* Texto branco */
 }
 
-strong {
-  color: #000000; /* Texto preto */
+.btn { padding: 7px 15px; background-color: #f5f5f5; color: #030303; }
+
+ul {
+  font-size: 25px;
+  color: #f5f5f5; /* Texto branco */
 }
 
-/* Animações */
+img {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 844px) {
+  img {
+    margin: 0;
+  }
+
+  .normas-container {
+    padding: 50px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  ul {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Estilos de animação */
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
@@ -110,21 +140,5 @@ strong {
 .visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Responsividade */
-@media (max-width: 844px) {
-  .normas-container {
-    width: 100%;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  ul {
-    font-size: 20px;
-  }
-  p {
-    font-size: 20px;
-  }
 }
 </style>

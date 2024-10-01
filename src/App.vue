@@ -4,7 +4,7 @@
   <FooterComponent></FooterComponent>
 
   <a href="https://w.app/h7MPRb">
-    <img class="wpp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png?20220228223904" alt="">
+    <img class="wpp" src="https://i.imgur.com/BWSMORc.png" alt="">
   </a>
 </template>
 
@@ -42,14 +42,12 @@ onMounted(() => {
 
 
 
-
-/* Configura rolagem suave */
 html {
   scroll-behavior: smooth; 
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #030303 !important;
   margin: 0;
   padding: 0;
   scroll-padding-top: 100px; /* Ajusta a rolagem para evitar que o header cubra o conteúdo */
@@ -88,5 +86,12 @@ section {
   width: 70px;
   height: 70px;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+
 
 </style>

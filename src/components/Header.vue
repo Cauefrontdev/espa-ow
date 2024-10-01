@@ -1,33 +1,33 @@
 <template>
   <header class="header">
-    <nav :class="{ active: isActive }" class="nav">
-      <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
-      <button class="hamburger" @click="toggleMenu"></button>
-      <ul class="nav-list">
-        <li class="nav-item active">
-          <RouterLink class="nav-link" aria-current="page" to="/" @click.native="closeMenu">Home</RouterLink>
-        </li>
-        <li class="nav-item active">
-          <a href="#eventos" class="nav-link" aria-current="page" @click.native="closeMenu">Eventos</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="#regras" @click.native="closeMenu">Normas e restrições</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#local" @click="closeMenu">Localização</a>
-        </li>
-
-        <li class="nav-item active">
-          <a href="#carouselExampleCaptions" class="nav-link" aria-current="page"  @click.native="closeMenu">Fotos</a>
-        </li>
-        <li class="nav-item active" @click.native="closeMenu">
-          <a href="#footer" class="nav-link">Contatos</a>
-        </li>
-        
-        
-
-      </ul>
-    </nav>
+    <div class="container">
+      <nav :class="{ active: isActive }" class="nav">
+        <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo">
+        <button class="hamburger" @click="toggleMenu"></button>
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#eventos" class="nav-link" aria-current="page" @click.native="closeMenu">Eventos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#regras" @click.native="closeMenu">Normas e restrições</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#local" @click="closeMenu">Localização</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#carouselExampleCaptions" class="nav-link" aria-current="page"  @click.native="closeMenu">Fotos</a>
+          </li>
+          <li class="nav-item active" @click.native="closeMenu">
+            <a href="#footer" class="nav-link">Contatos</a>
+          </li>
+      
+      
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -56,17 +56,23 @@ export default {
 }
 
 a {
-  font-family: sans-serif;
   text-decoration: none;
+  font-family: "Playfair Display", system-ui;
 }
 
 .header {
-  background: #030303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 3, 3, 0.707);  
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
   padding-inline: 16px;
 }
 
 .nav {
-  max-width: 1280px;
+  max-width: 100%;
   height: 100px;
   margin-inline: auto;
   display: flex;
@@ -100,7 +106,7 @@ a {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #fff;
+  border-top: 4px solid #fff;
   cursor: pointer;
 }
 
@@ -108,7 +114,7 @@ a {
 .hamburger::before {
   content: " ";
   display: block;
-  width: 30px;
+  width: 40px;
   height: 3px;
   background: #fff;
   margin-top: 5px;
@@ -122,6 +128,10 @@ a {
     z-index: 3;
   }
 
+
+
+
+
   .nav-list {
     position: fixed;
     z-index: 2;
@@ -129,14 +139,21 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #030303;
+    background: rgb(3, 3, 3);  
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 0;
     pointer-events: none;
+  }
+
+  .nav {
+    justify-content: space-between;
   }
 
   .nav-list a {
