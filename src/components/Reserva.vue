@@ -7,7 +7,7 @@
           <p v-else>{{ section.content }}</p>
         </li>
         <li class="fade-in" ref="animatedSections">
-          <a class="btn" href="https://w.app/h7MPRb">FALE COM IGOR MARQUES</a>
+          <a class="btn" href="https://wa.me/5514996027888?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Espa%C3%A7o%20W%20e%20seus%20servi%C3%A7os.">FALE COM IGOR MARQUES</a>
         </li>
       </ul>
     </div>

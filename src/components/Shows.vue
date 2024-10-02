@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div id="eventos" class="carrousel-container">
-      <h1 class="fade-in">Próximos Eventos</h1>
+      <h1 class="fade-in">Eventos Próximos</h1>
       <p class="fade-in">Clique na imagem para adquirir seu ingresso</p>
       <div id="carouselExampleAutoplaying" class="carousel slide fade-in" data-bs-ride="carousel">
         <div class="carousel-inner">
