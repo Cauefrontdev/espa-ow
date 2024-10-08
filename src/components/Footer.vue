@@ -22,9 +22,9 @@
             <h6 class="text-uppercase fw-bold mb-4">
               Redes Sociais
             </h6>
-            <a style="font-size: 30px;" href="https://www.facebook.com/profile.php?id=61566027370801"><i class="bi bi-facebook"></i></a>
-            <br>
-            <a style="font-size: 30px;" href="https://www.instagram.com/espacoweventos/"><i class="bi bi-instagram"></i></a>
+            <p>
+              <a href="https://www.google.com/maps/place/Espa%C3%A7o+Versalhes/@-22.2225351,-49.8829101,15z/data=!4m6!3m5!1s0x94bfd762e59fe319:0x8f9f16dd7b9ea687!8m2!3d-22.2225351!4d-49.8829101!16s%2Fg%2F11pypj1q6q?entry=ttu&g_ep=EgoyMDI0MDkyMi4wIKXMDSoASAFQAw%3D%3D" class="text-reset">Rua Fabio Mascarin da Silva, 125 - Pedro Lúcio, Marília-SP</a>
+            </p>
       
           </div>
           <!-- Grid column -->

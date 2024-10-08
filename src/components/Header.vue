@@ -15,10 +15,10 @@
             <a class="nav-link" aria-current="page" href="#regras" @click.native="closeMenu">Normas e restrições</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#map" @click="closeMenu">Localização</a>
+            <a class="nav-link" href="#local" @click="closeMenu">Localização</a>
           </li>
           <li class="nav-item active">
-            <a href="#foto" class="nav-link" aria-current="page"  @click.native="closeMenu">Fotos</a>
+            <a href="#carouselExampleCaptions" class="nav-link" aria-current="page"  @click.native="closeMenu">Fotos</a>
           </li>
           <li class="nav-item active" @click.native="closeMenu">
             <a href="#footer" class="nav-link">Contatos</a>

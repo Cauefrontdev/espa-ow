@@ -5,11 +5,11 @@
         <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
           <h1 v-if="section.isTitle">{{ section.title }}</h1>
           <p v-else>{{ section.content }}</p>
-
         </li>
-      
+        <li>
+          <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo" class="fade-in" ref="animatedSections">
+        </li>
       </ul>
-      <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo" class="fade-in" ref="animatedSections">
     </div>
   </div>
 </template>
@@ -62,27 +62,6 @@ onMounted(() => {
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-@media (min-width: 844px) {
-
-.fade-in {
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: left;
-opacity: 0;
-transform: translateY(50px);
-transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.normas-container {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 100px;
-}
-}
 
 
 

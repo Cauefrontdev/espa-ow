@@ -1,24 +1,48 @@
 <template>
-  <div id="map" class="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14773.848848507781!2d-49.8829101!3d-22.2225351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd762e59fe319%3A0x8f9f16dd7b9ea687!2sEspa%C3%A7o%20W!5e0!3m2!1spt-BR!2sbr!4v1727842396912!5m2!1spt-BR!2sbr" 
-      width="100%" 
-      height="500" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
+
+    <div id="local" class="map-container custom-tiles"></div>
+
 </template>
 
-<script setup>
+<script>
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+
+export default {
+  name: "LocationMap",
+  mounted() {
+    // Inicializa o mapa com zoom travado na localização
+    const map = L.map('local', {
+      center: [-22.2225351, -49.8829101], // Coordenadas da localização
+      zoom: 15, // Zoom aproximado para detalhar a área
+      zoomControl: false, // Desativa os controles de zoom
+      dragging: false, // Impede que o usuário arraste o mapa
+      scrollWheelZoom: false, // Desativa zoom com rolagem
+      doubleClickZoom: false, // Desativa zoom por duplo clique
+    });
+
+    // Estilo customizado em preto e branco com as cores primária e secundária
+    const customTileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://carto.com/attributions">CartoDB</a>',
+      className: 'custom-tiles' // Para customização via CSS
+    }).addTo(map);
+
+    // Adiciona um marcador no mapa
+    L.marker([-22.2225351, -49.8829101]).addTo(map)
+      .bindPopup('Rua Fábio Mascarim da Silva, 125 - Pedro Lúcio')
+      .openPopup();
+  },
+};
 </script>
 
 <style scoped>
 .map-container {
-  display: flex;
-  justify-content: center; /* Centraliza o mapa horizontalmente */
-  margin: 20px 0; /* Margens para o mapa */
+  width: 100%;
+  height: 80vh;
+}
+
+/* Customizando a cor dos tiles */
+.custom-tiles {
+  filter: drop-shadow(100%) ;
 }
 </style>

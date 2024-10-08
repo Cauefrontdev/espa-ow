@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div id="eventos" class="carrousel-container">
-      <h1 class="fade-in">Eventos Próximos</h1>
+      <h1 class="fade-in">Próximos Eventos</h1>
       <p class="fade-in">Clique na imagem para adquirir seu ingresso</p>
       <div id="carouselExampleAutoplaying" class="carousel slide fade-in" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -20,7 +20,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <p  class="fade-in p">Fique <b>atento</b> a nossa programação. sujeito a alteração sem aviso prévio.</p>
+      <p  class="fade-in">Fique <b>atento</b> a nossa programação. sujeito a alteração sem aviso prévio.</p>
     </div>
   </div>
 </template>
@@ -60,13 +60,6 @@ export default {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (min-width: 844px) {
-  .p {
-    margin-bottom: 100px;
-    max-width: 700px;
   }
 }
 
