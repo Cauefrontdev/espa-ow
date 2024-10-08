@@ -1,6 +1,7 @@
 <template>
   <div class="video-container">
     <video
+      ref="videoPlayer"
       muted
       autoplay
       playsinline
@@ -15,12 +16,25 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    const video = this.$refs.videoPlayer;
+
+    video.muted = true;
+    video.play().catch((error) => {
+      console.error("Autoplay falhou no iOS: ", error);
+    });
+  }
+};
+</script>
+
 <style scoped>
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Esconde qualquer conteúdo fora da área visível */
+  overflow: hidden; 
 }
 
 video {
@@ -28,7 +42,7 @@ video {
   width: 500px;
   height: 600px;
   object-fit: cover;
-  max-width: 100%; /* Garante que o vídeo não ultrapasse a tela */
-  max-height: 100%; /* Mantém o vídeo dentro do container */
+  max-width: 100%; 
+  max-height: 100%; 
 }
 </style>
