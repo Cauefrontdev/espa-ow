@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div id="regras" class="container normas-container text-white">
+    <div id="regras" class=" normas-container text-white">
       <ul class="list-unstyled">
         <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
           <h1 v-if="section.isTitle" class="">{{ section.title }}</h1>
@@ -73,6 +73,28 @@ onMounted(() => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+@media (min-width: 844px) {
+
+  .fade-in {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+  .normas-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
 
 
 ul {
@@ -141,4 +163,6 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
+
+
 </style>

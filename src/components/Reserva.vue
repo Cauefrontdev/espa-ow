@@ -3,11 +3,11 @@
     <div class="container">
       <ul class="list-unstyled">
         <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
-          <h1 v-if="section.isTitle" class="">{{ section.title }}</h1>
+          <h1 v-if="section.isTitle">{{ section.title }}</h1>
           <p v-else>{{ section.content }}</p>
         </li>
         <li class="fade-in" ref="animatedSections">
-          <a class="btn" href="https://w.app/h7MPRb">FALE COM IGOR MARQUES</a>
+          <a class="btn" href="https://wa.me/5514996027888?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Espa%C3%A7o%20W%20e%20seus%20servi%C3%A7os.">FALE COM IGOR MARQUES</a>
         </li>
       </ul>
     </div>
@@ -22,7 +22,7 @@ const sections = [
   { title: 'RESERVAS', isTitle: true },
   {
     content:
-      'Oferecemos uma variedade de ambientes em nossa casa, proporcionando a você a melhor experiência possível. Temos mesas confortáveis e acolhedoras, perfeitas para momentos especiais com amigos e familiares. Venha desfrutar do nosso espaço!',
+      'Oferecemos uma Estrutura Fantástica num Espaço extremamente aconchegante, proporcionando a você a melhor experiência possível. Seja para Shows, Casamentos, Formaturas, Eventos Corporativos, Palestras e Confraternizações, temos o Espaço ideal para o seu Evento!',
   },
   { content: 'RESERVE SEU LUGAR, OU ALUGUE O ESPAÇO W COMIGO PELO WHATSAPP.' },
 ];
@@ -54,8 +54,40 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
 
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@media (min-width: 844px) {
+
+.fade-in {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.normas-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+}
+
+.btn {
+  padding: 7px 15px;
+  background-color: #f5f5f5;
+  color: #030303;
+  text-align: center;
+}
 
 
 ul {
@@ -79,16 +111,11 @@ p {
   color: #f5f5f5; /* Texto branco */
 }
 
-.btn { padding: 7px 15px; background-color: #f5f5f5; color: #030303; }
-
 ul {
   font-size: 25px;
   color: #f5f5f5; /* Texto branco */
 }
 
-img {
-  margin-bottom: 100px;
-}
 
 @media (max-width: 844px) {
   img {
@@ -125,3 +152,8 @@ img {
   transform: translateY(0);
 }
 </style>
+
+
+
+
+
