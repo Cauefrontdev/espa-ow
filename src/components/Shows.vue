@@ -20,7 +20,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <p  class="fade-in">Fique <b>atento</b> a nossa programação. sujeito a alteração sem aviso prévio.</p>
+      <p  class="fade-in p">Fique <b>atento</b> a nossa programação. sujeito a alteração sem aviso prévio.</p>
     </div>
   </div>
 </template>
@@ -60,6 +60,13 @@ export default {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 844px) {
+  .p {
+    margin-bottom: 100px;
+    max-width: 700px;
   }
 }
 

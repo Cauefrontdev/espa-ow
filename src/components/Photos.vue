@@ -27,8 +27,7 @@ onMounted(() => {
   <div class="container">
     <h1 class="fade-in" id="foto">Fotos</h1>
     <p class="fade-in">Alan Malheiro Fotografias</p>
-  </div>
-  <div style="padding: 50px;" id="carouselExampleAutoplaying" class="carousel slide fade-in" data-bs-ride="carousel">
+    <div style="padding: 50px;" id="carouselExampleAutoplaying" class="carousel slide fade-in" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://i.imgur.com/cZ5y60q.jpeg" class="d-block" alt="...">
@@ -55,9 +54,35 @@ onMounted(() => {
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  </div>
+ 
 </template>
 
 <style scoped>
+
+@media (min-width: 844px) {
+
+.fade-in {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+margin: 50px 0px 50px 0px;
+
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+}
+
 /* Definindo a animação */
 @keyframes fadeInUp {
   0% {
@@ -68,6 +93,10 @@ onMounted(() => {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+img {
+  width: 100%;
 }
 
 .fade-in {

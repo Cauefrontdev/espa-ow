@@ -3,7 +3,7 @@
     <div class="container">
       <ul class="list-unstyled">
         <li v-for="(section, index) in sections" :key="index" class="fade-in" ref="animatedSections">
-          <h1 v-if="section.isTitle" class="">{{ section.title }}</h1>
+          <h1 v-if="section.isTitle">{{ section.title }}</h1>
           <p v-else>{{ section.content }}</p>
         </li>
         <li class="fade-in" ref="animatedSections">
@@ -54,8 +54,40 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
 
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@media (min-width: 844px) {
+
+.fade-in {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.normas-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+}
+
+.btn {
+  padding: 7px 15px;
+  background-color: #f5f5f5;
+  color: #030303;
+  text-align: center;
+}
 
 
 ul {
@@ -79,16 +111,11 @@ p {
   color: #f5f5f5; /* Texto branco */
 }
 
-.btn { padding: 7px 15px; background-color: #f5f5f5; color: #030303; }
-
 ul {
   font-size: 25px;
   color: #f5f5f5; /* Texto branco */
 }
 
-img {
-  margin-bottom: 100px;
-}
 
 @media (max-width: 844px) {
   img {
@@ -125,3 +152,8 @@ img {
   transform: translateY(0);
 }
 </style>
+
+
+
+
+
