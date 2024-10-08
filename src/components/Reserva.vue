@@ -101,19 +101,19 @@ h1 {
   font-family: "Playfair Display", system-ui;
   font-weight: bold;
   text-transform: uppercase;
-  color: #f5f5f5; /* Texto branco */
+  color: #f5f5f5; 
 }
 
 p {
   
   max-width: 700px;
   font-size: 25px;
-  color: #f5f5f5; /* Texto branco */
+  color: #f5f5f5; 
 }
 
 ul {
   font-size: 25px;
-  color: #f5f5f5; /* Texto branco */
+  color: #f5f5f5; 
 }
 
 

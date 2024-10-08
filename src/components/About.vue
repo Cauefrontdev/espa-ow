@@ -7,9 +7,8 @@
           <p v-else>{{ section.content }}</p>
 
         </li>
-      
       </ul>
-      <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo" class="fade-in" ref="animatedSections">
+      <img style="max-width: 80px;" src="https://i.imgur.com/8kUFfWO.png" alt="logo" class="fade-in w" ref="animatedSections">
     </div>
   </div>
 </template>
@@ -81,6 +80,10 @@ transition: opacity 1s ease-out, transform 1s ease-out;
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.w {
+  display: none !important;
 }
 }
 

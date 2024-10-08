@@ -39,11 +39,10 @@ export default {
         });
       },
       {
-        threshold: 0.1 // O quanto do elemento precisa estar visível antes da animação ocorrer
+        threshold: 0.1 
       }
     );
 
-    // Seleciona todos os elementos que deseja animar
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach((el) => observer.observe(el));
   }
@@ -51,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-/* Definindo a animação */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -122,5 +121,12 @@ h1 {
     padding: 50px;
     text-align: left !important;
   }
+}
+
+@media (min-width: 844px) {
+
+      #eventos {
+        margin-top: 100px;
+      }
 }
 </style>

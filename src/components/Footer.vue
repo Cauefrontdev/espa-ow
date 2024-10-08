@@ -58,9 +58,14 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:
-      <span class="text-reset fw-bold">Espaço W e Omni Web Developer</span>
+      <span class="text-reset fw-bold">Espaço W</span>
         </div>
-        <!-- Copyright -->
+      
+          <div class="omni">
+            <p>Desenvolvido por:</p>
+            <a href="https://www.instagram.com/omnistring/"><img class="omni-logo" src="https://i.imgur.com/WSq33AA.png" alt=""></a>
+          
+          </div>
       </footer>
     </div>
   </template>
@@ -70,5 +75,11 @@
 footer {
   padding: 50px;
   text-align: left;
+}
+
+
+.omni-logo {
+  max-width: 200px;
+  filter: invert(1);
 }
 </style>
