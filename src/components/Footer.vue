@@ -77,6 +77,15 @@ footer {
   text-align: left;
 }
 
+.omni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
 
 .omni-logo {
   max-width: 200px;

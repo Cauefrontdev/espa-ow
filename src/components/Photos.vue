@@ -80,6 +80,7 @@ transition: opacity 1s ease-out, transform 1s ease-out;
   justify-content: center;
   text-align: center;
   margin-bottom: 100px;
+  max-width: 800px;
 }
 }
 

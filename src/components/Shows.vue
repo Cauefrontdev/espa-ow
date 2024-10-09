@@ -7,7 +7,12 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="https://q2ingressos.com.br/events/ratto-acustico-espaco-w18092024104545">
-              <img src="https://i.imgur.com/rLrEWXS.jpeg" class="d-block img" alt="...">
+              <img src="https://i.imgur.com/cqezbX0.jpeg" class="d-block img" alt="...">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://q2ingressos.com.br/events/ira-espaco-w08102024032602">
+              <img src="https://i.imgur.com/z5MLOeS.jpeg" class="d-block img" alt="...">
             </a>
           </div>
         </div>
@@ -114,11 +119,11 @@ h1 {
 @media (max-width: 844px) {
   .img {
     width: auto;
-    height: 60vh;
+    height: 40vh;
   }
 
   #eventos {
-    padding: 50px;
+    padding: 50px 50px 0px ;
     text-align: left !important;
   }
 }
