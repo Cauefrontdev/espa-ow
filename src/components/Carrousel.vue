@@ -72,12 +72,25 @@ export default {
   overflow: hidden;
 }
 
-video {
+@media (max-width: 844px) {
+  video {
   margin-top: 100px;
   width: 100%;
   height: 800px;
   object-fit: cover;
   max-width: 100%; 
   max-height: 100%; 
+}
+}
+
+@media (min-width: 844px) {
+  video {
+  margin-top: 100px;
+  width: 40%;
+  height: 800px;
+  object-fit: cover;
+  max-width: 100%; 
+  max-height: 100%; 
+}
 }
 </style>
