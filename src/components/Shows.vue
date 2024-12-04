@@ -6,8 +6,8 @@
       <div id="carouselExampleAutoplaying" class="carousel slide fade-in" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="https://q2ingressos.com.br/events/ratto-acustico-espaco-w18092024104545">
-              <img src="https://i.imgur.com/cqezbX0.jpeg" class="d-block img" alt="...">
+            <a href="https://q2ingressos.com.br/events/buteco-da-w-espaco-w29102024100946"
+              <img src="https://i.imgur.com/g8v8dWL.jpeg" class="d-block img" alt="...">
             </a>
           </div>
           <div class="carousel-item">
